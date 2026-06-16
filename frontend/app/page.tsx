@@ -54,7 +54,7 @@ export default function Home() {
         </video>
 
         <div className="absolute inset-0 bg-black/40 z-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-black from-[15%] to-[#666666] to-[110%] opacity-40 z-10"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_bottom_right,black_15%,#666666_110%)] opacity-40 z-10"></div>
 
         <div className="relative z-20 flex flex-col items-start max-w-3xl">
           <h1 className="font-serif text-6xl md:text-[7rem] leading-none text-primary-light">
