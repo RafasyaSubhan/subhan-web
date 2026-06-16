@@ -53,9 +53,6 @@ export default function Home() {
           <source src="/hero-bg.mp4" type="video/mp4" />
         </video>
 
-        <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none transform-gpu"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom_right,black_15%,#666666_110%)] opacity-40 z-10 pointer-events-none transform-gpu"></div>
-
         <div className="relative z-20 flex flex-col items-start max-w-3xl">
           <h1 className="font-serif text-6xl md:text-[7rem] leading-none text-primary-light">
             GET TO KNOW
