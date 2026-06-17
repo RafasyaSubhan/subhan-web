@@ -159,7 +159,7 @@ export default function Home() {
         <img 
           src="/star-2.svg" 
           alt="Star" 
-          className="absolute top-40 right-10 md:right-24 w-6 md:w-100 -z-10 pointer-events-none" 
+          className="absolute top-40 right-4 md:right-24 w-60 md:w-100 -z-10 pointer-events-none" 
         />
 
         <video
@@ -171,7 +171,7 @@ export default function Home() {
           <source src="/starfall.mp4" type="video/mp4" />
         </video>
 
-        <h1 className="font-serif flex flex-col items-center justify-center w-full mb-16 md:mb-24 -translate-y-4 md:translate-y-20">
+        <h1 className="font-serif flex flex-col items-center justify-center w-full mb-16 md:mb-24 translate-y-8 md:translate-y-20">
           <span className="text-primary-light text-6xl md:text-[7rem] leading-none mr-16 md:mr-32">
             ABOUT
           </span>
@@ -271,7 +271,6 @@ export default function Home() {
           <span className="text-primary-light text-6xl md:text-[7rem] leading-none ml-16 md:ml-32 -mt-6 md:-mt-12 relative z-10">
             PROJECT<span className="text-4xl md:text-[5rem] tracking-normal">s</span>
           </span>
-          
         </h2>
       </section>
     </main>
