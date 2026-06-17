@@ -29,6 +29,12 @@
   display: flex;
   width: max-content;
   animation: marquee 25s linear infinite;
+
+  /* Tes fix safari problem */
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .animate-marquee:hover {

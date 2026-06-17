@@ -221,7 +221,7 @@ export default function Home() {
 
           <div className="border border-primary-light rounded-2xl py-4 md:py-4 overflow-hidden relative">
             <div className="animate-marquee">
-              <div className="flex items-center gap-10 md:gap-16 px-5 md:px-8">
+              <div className="flex items-center gap-10 md:gap-16 px-5 md:px-8 shrink-0">
                 {toolkits.map((tool, index) => (
                   <div key={`group1-${index}`} className="group relative flex items-center justify-center cursor-pointer">
                     <img 
