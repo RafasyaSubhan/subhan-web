@@ -36,7 +36,8 @@ export default function Home() {
     { name: "Python", src: "/logos/python.svg" },
     { name: "Django", src: "/logos/django.svg" },
     { name: "PostgreSQL", src: "/logos/postgresql.svg" },
-    { name: "Supabase", src: "/logos/supabase.svg" }
+    { name: "Supabase", src: "/logos/supabase.svg" },
+    { name: "Postman", src: "/logos/postman.svg" }
   ];
 
   return (
@@ -214,20 +215,22 @@ export default function Home() {
         </div>
 
         {/* Toolkit */}
-        <div className="w-full max-w-6xl mx-auto mt-12 md:mt-20 relative z-10">
-          <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
-            Toolkit
-          </h2>
+        <div className="w-full mt-12 md:mt-20 relative z-10">
+          <div className="w-full max-w-6xl mx-auto px-5 mb-6">
+            <h2 className="font-serif text-4xl md:text-5xl text-white">
+              Toolkit
+            </h2>
+          </div>
 
-          <div className="border border-primary-light rounded-2xl py-4 md:py-4 overflow-hidden relative">
-            <div className="animate-marquee">
+          <div className="w-full py-4 md:py-6 overflow-hidden relative [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
+            <div className="animate-marquee flex w-max">
               <div className="flex items-center gap-10 md:gap-16 px-5 md:px-8 shrink-0">
                 {toolkits.map((tool, index) => (
                   <div key={`group1-${index}`} className="group relative flex items-center justify-center cursor-pointer">
                     <img 
                       src={tool.src} 
                       alt={tool.name} 
-                      className={`h-10 md:h-12 object-contain transition-all duration-300 group-hover:blur-[2px] group-hover:opacity-40`} 
+                      className="h-10 md:h-12 object-contain transition-all duration-300 group-hover:blur-[2px] group-hover:opacity-40" 
                     />
                     <span className="absolute text-white font-sans text-xs md:text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap drop-shadow-md">
                       {tool.name}
@@ -235,14 +238,13 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-
-              <div className="flex items-center gap-10 md:gap-16 px-5 md:px-8">
+              <div className="flex items-center gap-10 md:gap-16 px-5 md:px-8 shrink-0">
                 {toolkits.map((tool, index) => (
                   <div key={`group2-${index}`} className="group relative flex items-center justify-center cursor-pointer">
                     <img 
                       src={tool.src} 
                       alt={tool.name} 
-                      className={`h-10 md:h-12 object-contain transition-all duration-300 group-hover:blur-[2px] group-hover:opacity-40`} 
+                      className="h-10 md:h-12 object-contain transition-all duration-300 group-hover:blur-[2px] group-hover:opacity-40" 
                     />
                     <span className="absolute text-white font-sans text-xs md:text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap drop-shadow-md">
                       {tool.name}
@@ -250,19 +252,35 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-            </div>
 
-            <div className="mt-6 md:mt-8 text-center w-full relative z-20">
-              <span className="font-sans text-sm md:text-base text-white/70">
-                ...and more
-              </span>
-            </div> 
+            </div>
           </div>
+
+          <div className="mt-6 md:mt-8 text-center w-full relative z-20">
+            <span className="font-sans text-sm md:text-base text-white/70">
+              ...and more
+            </span>
+          </div> 
         </div>
       </section>
 
       {/* My Projects Section*/}
-      <section className="min-h-screen bg-primary pt-24 pb-32 px-8 md:px-24 relative z-20">
+      <section className="min-h-screen bg-primary pt-24 pb-32 px-8 md:px-24 relative z-20 overflow-hidden">
+        <img 
+          src="/star-3.svg" 
+          alt="Star" 
+          className="absolute -top-12 left-8 md:left-12 w-64 md:w-100 opacity-80 -z-10 pointer-events-none" 
+        />
+        <img 
+          src="/star-4.svg" 
+          alt="Star" 
+          className="absolute top-20 right-4 md:right-24 w-60 md:w-100 -z-10 pointer-events-none" 
+        />
+        <img 
+          src="/saturn.svg" 
+          alt="Saturn" 
+          className="absolute -top-4 right-4 md:-right-4 w-60 md:w-160 z-0 pointer-events-none" 
+        />
         <h2 className="font-serif flex flex-col items-center justify-center w-full mb-16 md:mb-24 -translate-y-4 md:translate-y-20 relative z-20">
           <span className="text-secondary text-6xl md:text-[7rem] leading-none mr-48 md:mr-92 -rotate-[9deg] origin-bottom-right">
             MY
