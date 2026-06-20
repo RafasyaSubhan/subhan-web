@@ -279,7 +279,7 @@ export default function Home() {
         <img 
           src="/saturn.svg" 
           alt="Saturn" 
-          className="absolute -top-4 right-4 md:-right-4 w-60 md:w-160 z-0 pointer-events-none" 
+          className="absolute -top-4 -right-2 md:-right-4 w-60 md:w-160 z-0 pointer-events-none" 
         />
         <h2 className="font-serif flex flex-col items-center justify-center w-full mb-16 md:mb-24 -translate-y-4 md:translate-y-20 relative z-20">
           <span className="text-secondary text-6xl md:text-[7rem] leading-none mr-48 md:mr-92 -rotate-[9deg] origin-bottom-right">
