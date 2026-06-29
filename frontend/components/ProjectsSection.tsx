@@ -111,6 +111,45 @@ export default function ProjectsSection() {
                         </div>
                     </div>
                 </div>
+
+                <div tabIndex={0} className="relative group p-[13px] md:p-4 w-full max-w-[522px] justify-self-center rounded-lg bg-secondary/20 backdrop-blur-md border border-white/10 shadow-lg overflow-hidden cursor-pointer outline-none">
+                    <div className="w-full aspect-[3/2] relative rounded bg-primary/50 overflow-hidden">
+                        <img 
+                            src="/projects/JSON Web.svg"
+                            alt="Project 2" 
+                            className="w-full h-full object-cover object-top transition-all duration-700 group-hover:blur-md group-hover:scale-110 group-focus:blur-md group-focus:scale-110"
+                        />
+                        
+                        <div className="absolute inset-0 bg-black/60 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus:opacity-100 group-focus:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-700 flex flex-col justify-center items-center p-5 md:p-6 z-10 text-center">
+                            <div className="flex flex-col items-center gap-2">
+                            <h3 className="font-sans font-bold text-lg md:text-xl text-primary-light leading-tight drop-shadow-md">
+                                JSON
+                            </h3>
+                            <p className="font-sans text-xs md:text-sm text-primary-light/90 leading-relaxed drop-shadow-md line-clamp-3">
+                                Built the Auth & Profile service for a proxy shopping platform, featuring secure login, RBAC, traveler KYC, and user moderation.
+                            </p>
+                            <div className="mt-2 flex gap-2">
+                                <img src="/logos/java.svg" alt="Java" className="w-6 h-6 md:w-8 md:h-8 drop-shadow-md" />
+                                <img src="/logos/springboot.svg" alt="Spring Boot" className="w-6 h-6 md:w-8 md:h-8 drop-shadow-md" />
+                                <img src="/logos/postgresql.svg" alt="PostgreSQL" className="w-6 h-6 md:w-8 md:h-8 drop-shadow-md" />
+                                <img src="/logos/supabase.svg" alt="Supabase" className="w-6 h-6 md:w-8 md:h-8 drop-shadow-md" />
+                                <img src="/logos/typescript.svg" alt="TypeScript" className="w-6 h-6 md:w-8 md:h-8 drop-shadow-md" />
+                                <img src="/logos/css.svg" alt="CSS" className="w-6 h-6 md:w-8 md:h-8 drop-shadow-md" />
+                            </div>
+                            </div>
+                            <a 
+                            href="https://github.com/advprog-2026-B9-project" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="mt-4 md:mt-5 inline-flex items-center justify-center py-2 px-5 md:py-2.5 md:px-6 bg-[#020617] rounded-lg transition-all duration-300 border border-white/10 cursor-pointer hover:bg-[#E6E6E8] group/button"
+                            >
+                                <span className="font-sans font-bold text-sm md:text-base text-[#E6E6E8] group-hover/button:text-[#020617] transition-colors duration-300">
+                                    View Repository
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );
