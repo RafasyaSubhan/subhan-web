@@ -51,8 +51,8 @@ export default function FilterTabBar({
       <div
         className="absolute inset-0 rounded-[44px] pointer-events-none"
         style={{
-          padding: "1px", 
-          background: "linear-gradient(to bottom, #FDF9E8 0%, #97958A 100%)",
+          padding: "1px",
+          background: "linear-gradient(to bottom, #FDF9E8 0%, #97958A00 100%)",
           WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
           WebkitMaskComposite: "xor",
           maskComposite: "exclude",
