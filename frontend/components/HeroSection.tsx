@@ -20,7 +20,7 @@ export default function HeroSection() {
         </h1>
         
         <h2 className="font-sans text-2xl md:text-[40px] leading-none text-primary-light mt-2">
-          <span className="inline">Rafasya Muhammad Subhan</span>
+          <span className="inline">Rafasya Muhammad Subhan.</span>
           <span className="inline-block w-[3px] h-[0.85em] bg-primary-light ml-1 md:ml-2 animate-blink align-baseline"></span>
         </h2>
         
