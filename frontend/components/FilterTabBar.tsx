@@ -79,7 +79,7 @@ export default function FilterTabBar({
             buttonRefs.current[index] = el;
           }}
           onClick={() => onFilterChange(filter)}
-          className={`relative z-10 px-4 py-2 md:px-[40px] md:py-[12px] font-sans text-sm md:text-[24px] leading-[31px] whitespace-nowrap transition-colors duration-300 ${
+          className={`relative z-10 cursor-pointer px-4 py-2 md:px-[40px] md:py-[12px] font-sans text-sm md:text-[24px] leading-[31px] whitespace-nowrap transition-colors duration-300 ${
             activeFilter === filter
               ? "text-primary-light"
               : "text-primary-light/70 hover:text-primary-light"
